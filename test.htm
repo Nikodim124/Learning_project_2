@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Контрольные материалы</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <header><a href="https://pspu.ru"><img src="images/Group.png" alt="ПГГПУ" height="150px"></a></header>
+        <ul>
+            <li><a href="index.htm"><i class="fas fa-home"></i>Главная</a></li>
+            <li><a href="teor1.htm"><i class="fas fa-address-card"></i>Теория</a></li>
+            <li><a href="prak.htm"><i class="fas fa-project-diagram"></i>Практика</a></li>
+            <li><a href="test.htm" class="current"><i class="fas fa-tasks"></i>Тест</a></li>
+            <li><a href="authors.htm"><i class="fas fa-user"></i>Команда</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Решение транспортных задач по критерию стоимости</div>
+        <div class="info">
+            <div class="zag">
+            Контрольные материалы
+            </div>
+         	<div>Тест содержит 10 заданий: вопросы с одним верным ответом, вопросы с несколькими правильными ответами и вопросы с чётким ответом.</div>
+            <div id="d1">
+                <b>1. Основной метод решения задачи линейного программирования:</b><br>
+                <label><input type="radio" name="rb1" id="z1"> Симплекс метод</input></label><br>
+                <label><input type="radio" name="rb1"> Линейный метод</input></label><br>
+                <label><input type="radio" name="rb1"> Метод теории вероятности</input></label><br>
+                <label><input type="radio" name="rb1"> Метод логического анализа</input></label><br>
+            </div>
+            <hr>
+            <div id="d2">
+                <b>2. При особенности решения ТЗ с неправильным балансом, если суммарные запасы поставщиков превосходят суммарные запросы потребителей, то необходимо ввести фиктивного:</b><br>
+                <label><input type="radio" name="rb2"> n*(n+1)-го потребителя</input></label><br>
+                <label><input type="radio" name="rb2"> (n-1)-го потребителя</input></label><br>
+                <label><input type="radio" name="rb2" id="z2"> (n+1)-го потребителя</input></label><br>
+                <label><input type="radio" name="rb2"> n*(n-1)-го потребителя</input></label><br>
+            </div>
+            <hr>
+            <div id="d3">
+                <b>3. Выберите первое действие метода потенциалов:</b><br>
+                <label><input type="radio" name="rb3"> Построить начальное опорное решение (методом минимальной стоимости или каким-либо другим методом), проверить правильность его построения по количеству занятых клеток (их должно быть m+n-1) и убедиться в линейной независимости векторов условий (используется метод вычеркивания).</input></label><br>
+                <label><input type="radio" name="rb3" id="z3"> Проверить выполнение необходимого и достаточного условия разрешимости задачи.</input></label><br>
+                <label><input type="radio" name="rb3"> Построить систему потенциалов, соответствующих опорному решению.</input></label><br>
+                <label><input type="radio" name="rb3">	Проверить выполнения условия оптимальности для свободных клеток таблицы.</input></label><br>
+            </div>
+            <hr>
+            <div id="d4">
+                <b>4. Согласно методу СЕВЕРО-ЗАПАДНОГО УГЛА запасы очередного поставщика используются для:</b><br>
+                <label><input type="radio" name="rb4"> Обеспечения запросов очередных потребителей</input></label><br>
+                <label><input type="radio" name="rb4"> Обеспечения запросов очередных потребителей до тех пор, пока не будут исчерпаны полностью, после чего используется оставшиеся у поставщика запасы.</input></label><br>
+                <label><input type="radio" name="rb4" id="z4"> Обеспечения запросов очередных потребителей до тех пор, пока не будут исчерпаны полностью, после чего используется запасы следующего по номеру поставщика.</input></label><br>
+                <label><input type="radio" name="rb4"> Обеспечения запросов очередных потребителей до тех пор, пока не будут исчерпаны полностью, после чего используется запасы нескольких следующих по номеру поставщиков.</input></label><br>
+            </div>
+            <hr>
+            <div id="d5">
+                <b>5. Циклом называется такая последовательность клеток таблицы транспортной задачи в которой:</b><br>
+                <label><input type="radio" name="rb5" id="z5"> Соседние клетки расположены в одной строке или столбце, причем первая и последняя также находятся в одной строке или столбце.</input></label><br>
+                <label><input type="radio" name="rb5"> Две и только соседние клетки расположены в одной строке или столбце, причем первая и последняя находятся в разных строках или столбцах.</input></label><br>
+                <label><input type="radio" name="rb5"> Две и только соседние клетки расположены в одной строке или столбце.</input></label><br>
+                <label><input type="radio" name="rb5"> Две соседние клетки расположены в одной строке, причем первая и последняя также находятся в одной строке.</input></label><br>
+            </div>
+            <hr>
+            <div id="d6">
+                <b>6. Транспортная задача делится следующие виды:</b><br>
+                <label><input type="checkbox" name="сb1" id="z61"> Транспортная задача по критерию стоимости</input></label><br>
+                <label><input type="checkbox" name="сb1" id="z62"> Транспортная задача по критерию времени</input></label><br>
+                <label><input type="checkbox" name="сb1" id="z63"> Транспортная задача по критерию запасов</input></label><br>
+                <label><input type="checkbox" name="сb1" id="z64"> Транспортная задача по критерию задолженности</input></label><br>
+            </div>
+            <hr>
+            <div id="d7">
+                <b>7. Выберите верные особенности решения транспортных задач с неправильным балансом:</b><br>
+                <label><input type="checkbox" name="сb2" id="z71"> Если суммарные запасы поставщиков превосходят суммарные запросы потребителей, то необходимо ввести фиктивного (n+1)-го потребителя с запросами равными разности суммарных запасов поставщиков и запросов потребителей, и нулевыми стоимостями перевозок единиц груза</input></label><br>
+                <label><input type="checkbox" name="сb2" id="z72"> Если суммарные запросы потребителей превосходят суммарные запасы поставщиков, то необходимо ввести фиктивного (m+1)-го поставщика с запасами равные разности суммарных запросов потребителей и запасов поставщиков, и нулевыми стоимостями перевозок единиц груза</input></label><br>
+                <label><input type="checkbox" name="сb2" id="z73"> Если суммарные запасы поставщиков превосходят суммарные запросы потребителей, то необходимо ввести фиктивного n*(n+1)-го потребителя с запросами равными разности суммарных запасов поставщиков и запросов потребителей, и нулевыми стоимостями перевозок единиц груза</input></label><br>
+                <label><input type="checkbox" name="сb2" id="z74"> Если суммарные запросы потребителей превосходят суммарные запасы поставщиков, то необходимо ввести фиктивного m*(m+1)-го поставщика с запасами равные разности суммарных запросов потребителей и запасов поставщиков, и нулевыми стоимостями перевозок единиц груза</input></label><br>
+            </div>
+            <hr>
+            <div id="d8">
+                <b>8. Выберите верные особенности метода минимальной стоимости</b><br>
+                <label><input type="checkbox" name="сb3" id="z81"> Поставщик исключается из рассмотрения, если его запасы заканчиваются.</input></label><br>
+                <label><input type="checkbox" name="сb3" id="z82"> На каждом шаге исключается один поставщик, а также один потребитель.</input></label><br>
+                <label><input type="checkbox" name="сb3" id="z83"> Если поставщик исключен, его запасы равны нулю, то на том шаге, когда от него требуется поставить груз, в соответствующую клетку таблицы заносится базисный нуль и лишь затем поставщик исключается из рассмотрения.</input></label><br>
+                <label><input type="checkbox" name="сb3" id="z84"> Потребитель исключается из рассмотрения, если его запросы удовлетворены полностью.</input></label><br>
+            </div>
+            <hr>
+            <div id="d9">
+                <b>9. Введите пропущенное слово. «Транспортная задача является ......, если суммарные запасы поставщиков равны суммарным запросам потребителей.»</b><br>
+                <input type="text" name="t1" size="50px" placeholder="Введите ответ" id="z9"></input><br>
+            </div>
+            <hr>
+            <div id="d10">
+                <b>10. Введите пропущенное слово. «...... решением транспортной задачи называется любое допустимое решение, для которого векторы условий, соответствующие положительным координатам, линейно независимы.</b><br>
+                <input type="text" name="t2" size="50px" placeholder="Введите ответ" id="z10"></input><br>
+            </div>
+            <hr>
+            <input type="button" value="Завершить" onClick="fun1()" id="button1" class="but">
+            <div id="result"></div>
+      </div>
+    </div>
+    <script>
+        function fun1(){
+            var sum=0;
+            if (document.getElementById("z1").checked==true) {
+            	sum=sum+1; document.getElementById("d1").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d1").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z2").checked==true) {
+            	sum=sum+1; document.getElementById("d2").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d2").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z3").checked==true) {
+            	sum=sum+1; document.getElementById("d3").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d3").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z4").checked==true) {
+            	sum=sum+1; document.getElementById("d4").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d4").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z5").checked==true) {
+            	sum=sum+1; document.getElementById("d5").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d5").style.backgroundColor="#ffdddd";
+            };
+            if ((document.getElementById("z61").checked==true)&&(document.getElementById("z62").checked==true)&&(document.getElementById("z63").checked==false)&&(document.getElementById("z64").checked==false)) {
+            	sum=sum+1; document.getElementById("d6").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d6").style.backgroundColor="#ffdddd";
+            };
+            if ((document.getElementById("z73").checked==false)&&(document.getElementById("z74").checked==false)&&(document.getElementById("z71").checked==true)&&(document.getElementById("z72").checked==true)) {
+            	sum=sum+1; document.getElementById("d7").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d7").style.backgroundColor="#ffdddd";
+            };
+            if ((document.getElementById("z82").checked==false)&&(document.getElementById("z84").checked==true)&&(document.getElementById("z81").checked==false)&&(document.getElementById("z83").checked==true)) {
+            	sum=sum+1; document.getElementById("d8").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d8").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z9").value.toLowerCase()=='сбалансированной') {
+            	sum=sum+1; document.getElementById("d9").style.backgroundColor="#ddffdd";
+            } else if (document.getElementById("z10").value.toLowerCase()=='сбалансированная') {
+            	sum=sum+1; document.getElementById("d10").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d9").style.backgroundColor="#ffdddd";
+            };
+            if (document.getElementById("z10").value.toLowerCase()=='опорным') {
+            	sum=sum+1; document.getElementById("d10").style.backgroundColor="#ddffdd";
+            } else if (document.getElementById("z10").value.toLowerCase()=='опорное') {
+            	sum=sum+1; document.getElementById("d10").style.backgroundColor="#ddffdd";
+            } else {
+            	document.getElementById("d10").style.backgroundColor="#ffdddd";
+            };
+            document.getElementById("result").innerHTML="Верно "+sum+" из 10!";
+            document.getElementById("button1").style.visibility="hidden";
+        }
+    </script>
+</div>
+
+</body>
+</html>

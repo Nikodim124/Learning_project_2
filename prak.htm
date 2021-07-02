@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая часть</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <header><a href="https://pspu.ru"><img src="images/Group.png" alt="ПГГПУ" height="150px"></a></header>
+        <ul>
+            <li><a href="index.htm"><i class="fas fa-home"></i>Главная</a></li>
+            <li><a href="teor1.htm"><i class="fas fa-address-card"></i>Теория</a></li>
+            <li><a href="prak.htm" class="current"><i class="fas fa-project-diagram"></i>Практика</a></li>
+            <li><a href="test.htm"><i class="fas fa-tasks"></i>Тест</a></li>
+            <li><a href="authors.htm"><i class="fas fa-user"></i>Команда</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Решение транспортных задач по критерию стоимости</div>
+        <div class="info">
+            <div>Программа производит вычисления допустимого начального базиса</div>
+            <div>Задача является сбалансированной. Поиск начального базиса происходит методом северо-западного угла</div>
+            <table class="table">
+                <tr>
+                  <th>
+                    <div class="all">  
+                      <div class="top"></div>
+                      <div class="mid" id="count1" value='150'></div>
+                      <div class="bot" id="count2" value='150'></div>
+                    </div>
+                  </th>
+                  <th><input id="value1" class="field1" type="text" value="50"/></th>
+                  <th><input id="value1" class="field1" type="text" value="40"/></th>
+                  <th><input id="value2" class="field1" type="text" value="30"/></th>
+                  <th><input id="value3" class="field1" type="text" value="20"/></th>
+                  <th><input id="value4" class="field1" type="text" value="10"/></th>
+                  </tr>
+                 <tr>
+                  <td><input id="value5" class="field2" type="text" value="10"/></td>
+                  <td id="result00">-</td>
+                  <td id="result01">-</td>
+                  <td id="result02">-</td>
+                  <td id="result03">-</td>
+                  <td id="result04">-</td>
+                 </tr>
+                <tr>
+                  <td><input id="value6" class="field2" type="text" value="20"/></td>
+                  <td id="result10">-</td>
+                  <td id="result11">-</td>
+                  <td id="result12">-</td>
+                  <td id="result13">-</td>
+                  <td id="result14">-</td>
+                </tr>
+                <tr>
+                  <td><input id="value7" class="field2" type="text" value="30"/></td>
+                  <td id="result20">-</td>
+                  <td id="result21">-</td>
+                  <td id="result22">-</td>
+                  <td id="result23">-</td>
+                  <td id="result24">-</td>
+                </tr>
+                <tr>
+                  <td><input id="value1" class="field2" type="text" value="40"/></td>
+                  <td id="result30">-</td>
+                  <td id="result31">-</td>
+                  <td id="result32">-</td>
+                  <td id="result33">-</td>
+                  <td id="result34">-</td>
+                </tr>
+                <tr>
+                  <td><input id="value1" class="field2" type="text" value="50"/></td>
+                  <td id="result40">-</td>
+                  <td id="result41">-</td>
+                  <td id="result42">-</td>
+                  <td id="result43">-</td>
+                  <td id="result44">-</td>
+                </tr>
+            </table>
+            <div class="hid" id='hid'>Запасы поставщиков и потребителей не совпадают</div>
+            <input class="but" type="submit" value="РАССЧИТАТЬ" onclick="start();">
+
+            <script type="text/javascript" language="javascript" charset="utf-8">
+                function start() {
+                  var d = document,
+                    inp1 = d.getElementsByClassName('field1'),
+                    mas1 = [];
+                    inp2 = d.getElementsByClassName('field2'),
+                    mas2 = [];
+
+                  function sum() {
+                    var added_item_button = document.getElementById('hid');
+                    var total1 = mas1.reduce((a, b) => a + b, 0);
+                    document.getElementById('count2').innerHTML = total1;
+                    var total2 = mas2.reduce((a, b) => a + b, 0);
+                    document.getElementById('count1').innerHTML = total2;
+                    if (total1 == total2) {
+                      added_item_button.style.display = 'none';
+                      count();
+                    } else {
+                      added_item_button.style.display = 'block';
+                    }
+                  }
+
+                  function save() {
+                    for (var i = 0; i < inp1.length; i++) {
+                      mas1[i] = parseInt(inp1[i].value);
+                    }
+                    for (var i = 0; i < inp2.length; i++) {
+                      mas2[i] = parseInt(inp2[i].value);
+                    }
+                  }
+                  save();
+                  sum();
+
+                  function count() {
+                    for (var i = 0; i < mas1.length; i++) {
+                      for (var j = 0; j < mas2.length; j++) {
+                        let p = Math.min(mas2[j], mas1[i]);
+                        document.getElementById('result'+j+i).innerHTML = p;
+                        mas1[i] -= p;
+                        mas2[j] -= p;
+                      }
+                    }
+                  }
+                }
+            </script>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
